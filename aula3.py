@@ -28,5 +28,5 @@ print(re.findall(r'jo?ão', texto, flags=re.IGNORECASE))
 print(re.findall(r'jo{1,}ão{1,}', texto, flags=re.IGNORECASE))
 print(re.findall(r've{3}m{1,2}', texto, flags=re.IGNORECASE))
 
-texto2 = 'João ama ser amado'
+texto2 = 'João ama ser amado amad ama'
 print(re.findall(r'ama[do]*', texto2, flags=re.IGNORECASE))
