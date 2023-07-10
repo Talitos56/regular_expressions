@@ -34,6 +34,6 @@ Não canso de ouvir a Maria:
 # print(re.findall(r'\S+', texto, flags=re.I))
 # print(re.findall(r'\be\w+', texto, flags=re.I))
 # print(re.findall(r'\w+e\b', texto, flags=re.I))
-# print(re.findall(r'\b\w{4}\b', texto, flags=re.I))
-# print(re.findall(r'\w{4}', texto, flags=re.I))
+print(re.findall(r'\b\w{4}\b', texto, flags=re.I))
+print(re.findall(r'\w{4}', texto, flags=re.I))
 print(re.findall(r'flores\B', texto, flags=re.I))
