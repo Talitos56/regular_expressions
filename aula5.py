@@ -3,10 +3,11 @@
 # () ()  \1 \2
 # (())()   \1 \2 \3
 import re
-from pprint import pprint
+
+# from pprint import pprint
 
 texto = '''
-<p>Frase 1</p> <p>Eita</p> <p>Qualquer frase</p> <div>1</div> 
+<p>Frase 1</p> <p>Eita</p> <p>Qualquer frase</p> <div>1</div>
 '''
 
 # cpf = 'a 147.852.963-12 a'
@@ -18,6 +19,6 @@ texto = '''
 
 print(re.sub(r'(<(.+?)>)(.+?)(<\/\2>)', r'\1 MAIS \3 COISAS \4', texto))
 
-# # for tag in tags:
-# #     um, dois, tres = tag
-# #     print(tres)
+# for tag in tags:
+#     um, dois, tres = tag
+#     print(tres)
