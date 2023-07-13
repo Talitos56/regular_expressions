@@ -1,4 +1,4 @@
-from random import choice, randint, shuffle
+from random import choice, randint
 
 
 def zero_a_nove():
@@ -47,7 +47,6 @@ def create_pass(
             password.append(strange_chars())
 
     password = password[:length]
-    shuffle(password)
     return ''.join(password)
 
 
