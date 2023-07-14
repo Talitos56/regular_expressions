@@ -51,7 +51,11 @@ def is_int(string):
 while True:
     numero = input('Digite um número: ')
 
-    if is_int(numero):
+    if numero == '0':
+        print('Termino por aqui')
+        break
+
+    elif is_int(numero):
         numero = int(numero)
         print(f'O número {numero} foi convertido para int')
         continue
